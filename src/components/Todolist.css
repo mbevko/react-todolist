@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #1b1b1b;
+}
+
+.application {
+    min-width: 400px;
+    max-width: 500px;
+    margin: auto;
+}
+
+:root {
+    --green-color: #61d25c;
+    --main-bg: #1b1b1b;
+}
+
+h1 {
+    color: var(--green-color);
+    font-family: 'Nunito', sans-serif;
+}
+
+.heading {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15pt;
+}
+
+.heading p {
+    color: var(--green-color);
+    font-size: 25pt;
+}
+
+.far {
+    cursor: pointer;
+}
+
+.new_todo {
+    width: 93%;
+    height: 30px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid #2e2e2e 1px;
+    outline: none;
+    font-size: 1em;
+    background: none;
+    color: #dadada;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_list li {
+    cursor: pointer;
+}
+
+.tasks {
+    width: 93%;
+    border-bottom: solid #2e2e2e 1px;
+    color: #dadada;
+    outline: none;
+}
+
+.fullTask {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border-radius: 15px;
+    border: solid silver 1px;
+    outline: none;
+}
+
+.checkbox.clicked {
+    background: var(--green-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    border: solid silver 1px;
+    outline: none;
+}
+
+.checkbox:active {
+    background: var(--green-color);
+    border: var(--green-color);
+}
+
